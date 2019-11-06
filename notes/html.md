@@ -108,3 +108,6 @@
     <footer>&copy; 2018 Camper Cat</footer>
 
     <aside> element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.
+
+
+    <figure>    The HTML <figure> (Figure With Optional Caption) element represents self-contained content, and is automatically indented, potentially with an optional caption, which is specified using the (<figcaption>) element.
