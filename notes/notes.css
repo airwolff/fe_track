@@ -670,3 +670,43 @@ The third value must be a <length>. It always represents the Z offset.
 *********************************************************/
 /* Best practice use unitless #, 
 *********************************************************/
+
+
+/*box-sizing
+Alters the default CSS box model used to calculate widths and heights of elements.
+
+max-width
+Sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value set for max-width.
+
+
+/*********************************************************
+//  Background Image
+*********************************************************/
+/*
+
+max width keeps it from breaking the container when put at 100%
+
+background-image
+Sets one or several background images for an element.
+
+background-size
+Sets the size of a background image. relative to the size of the container.
+
+background-repeat
+Controls whether or not the image is tiled and how it gets tiled both vertically and horizontally. The value repeat-y repeats the image vertically, while repeat-x repeats the background image horizontally.
+
+When using a background image it's best practice to also add background color to maintain contrast if image isn't available.
+
+background-position
+Controls the background position of a background image. By default, a background image’s initial position is the top-left corner of the containing element.
+when using length value it's relative to the lengthe  and width of the backgroudn area
+
+background
+Shorthand for setting the individual background values in one place.
+
+cover
+The cover value adjusts the background area so that it's completely covered by the background image, while maintaining its width and height proportions:
+*/
+
+
+*/ 
