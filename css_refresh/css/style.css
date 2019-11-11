@@ -133,3 +133,26 @@ a:active {
 .arrow {
   width: 50px;
 }
+
+/* Floated Columns------------------ */
+.resorts,
+.tips {
+  width:46.5%;
+}
+/*since resorts is still in the regular flow and takes up the whole width it pushes tips down, if both are floated the height collapses. Must clear floats from collapsing element. 
+can remedy with overflow:auto;, not recomended and could create scrollbars on some screens. Most reliable is clearfix*/
+.tips {
+  float: right;
+}
+
+.resorts {
+  float: left;
+  }
+
+  /* Float Clearfix ------------------ */
+  .group:after {
+    content:" ";
+    display: table;
+    clear: both; /*both clears any collapsed space on both sides of the container
+  }
+  /*creates a blank pseudo-element after content of container element(div)*/

@@ -708,5 +708,35 @@ cover
 The cover value adjusts the background area so that it's completely covered by the background image, while maintaining its width and height proportions:
 */
 
+/*********************************************************
+//  Float
+*********************************************************/
+/*
+When an element is floated, the element is taken out of the normal flow of the page and placed along the left or right side of its container.
 
-*/ 
+The following will float an element over to the right side of its container:*/
+
+.tips {
+  float: right;
+}
+/*The following will place the element along the left side of its container:*/
+
+.tips {
+  float: left;
+}
+
+/*since resorts is still in the regular flow and takes up the whole width it pushes tips down, if both are floated the height collapses. Must clear floats from collapsing element. 
+can remedy with overflow:auto;, not recomended and could create scrollbars on some screens. Most reliable is clearfix*/
+
+
+/*********************************************************
+//  lists
+*********************************************************/
+/*list-style-type
+Sets the appearance of a list item.
+
+list-style-position
+Sets the position of a list marker in a list item. By default, the browser displays the list markers outside the list items.
+
+list-style
+The shorthand property for setting list-style-type, list-style-image and list-style-position.*/
