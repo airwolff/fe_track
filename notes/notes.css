@@ -888,3 +888,42 @@ radial-gradient(
   ]?
   <color-stop> [ , <color-stop> ]+
 )
+
+/*********************************************************
+//  Mobile First
+*********************************************************/
+/* Uses min-width, i.e. the pixel width or wider */
+
+
+/*********************************************************
+//  Box Sizing
+*********************************************************/
+
+/*********************************************************
+//  Sticky Footer
+*********************************************************/
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
+ /* vh = viewport height - viewport relative unit
+  1vh is equal to 1/100th or 1% of the viewport
+  100vh means 100% of viewport height 
+89px = height of footer, add - 89px to not force the browser to increase in size.
+  */
+
+/*********************************************************
+//  calc();
+*********************************************************/
+
+/* property: calc(expression) */
+width: calc(100% - 80px);
+
+/*accepts
++  -  * and / At least one of the arguments must be a <number>.
+
+With Division. The right-hand side must be a <number>.*/
+
+/*********************************************************
+//  media query
+*********************************************************/
+
