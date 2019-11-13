@@ -75,7 +75,8 @@ border-radius: 10px 5% / 20px 25em 30px 35em;
 //  Float
 *********************************************************/
 /* 
-Floating elements are removed from the normal flow of a document and pushed to either the left or right of their containing parent element. It's commonly used with the width property to specify how much horizontal space the floated element requires. 
+Floating elements are removed from the normal flow of a document and pushed to either the left or right of their containing parent element. 
+It's commonly used with the width property to specify how much horizontal space the floated element requires. 
 */
 
 /*********************************************************
@@ -926,4 +927,69 @@ With Division. The right-hand side must be a <number>.*/
 /*********************************************************
 //  media query
 *********************************************************/
+
+/*********************************************************
+//  inline
+*********************************************************/
+/*will not apply any width or height properties or top and bottom margin settings
+will only accept L-R margin and padding*/
+
+/*browser adds default whitespace because it interprets the line breaks and spaces in the HTML as content. The browser adds spaces between inline and inline-block items just like it adds spaces between words.*/
+<ul class="main-nav">
+          <li><a href="#">ice cream</a></li>
+          <li><a href="#">donuts</a></li>
+          <li><a href="#">tea</a></li>
+          <li><a href="#">coffee</a></li>
+        </ul>
+/*Having closing li tag up against opening removes browser force white space (?)*/
+<ul class="main-nav">
+          <li><a href="#">ice cream</a></li><li>
+            <a href="#">donuts</a></li><li>
+            <a href="#">tea</a></li><li>
+            <a href="#">coffee</a></li>
+        </ul>
+
+/*Remove the Gaps with CSS not HTML
+Two CSS techniques you can use: a negative margin or zero out the parent element's font-size value.
+
+1 Negative Margin*/
+.main-nav li {
+  margin-right: -5px;
+}
+/*2 Zero Out Parent Element Font Size
+the character spaces (or gaps) between inline and inline-block elements is determined by the parent element's font-size value.
+*/
+.main-nav {
+  font-size: 0;
+}
+
+.main-nav li {
+  font-size: 1rem; /* root element font size */
+}
+
+/*With this approach, you'll need to reset the font-size value of the inline or inline-block child elements back to your desired size.*/
+/*********************************************************
+//  inline-block
+*********************************************************/
+/*Flows together like inline 
+Can use width, height and top/bottom margins & padding
+*/
+
+/*********************************************************
+//  Block
+*********************************************************/
+
+/*If display block is give to an element inside an element with inline-block it will take up a line relative to other content in the same container. It won't affect the alignment of the container itself.
+The <a> is a child ofits parent <li> so it will only take up the full width of its parent container.
+
+However, if you set <li> to inline the <a> will technically too line up side by side, this is because it is contained in its parent <li>.
+
+make element block so it's all clickable
+
+*/
+
+/*********************************************************
+//  Padding
+*********************************************************/
+/* Add padding to increase clickable area*/
 
