@@ -781,8 +781,21 @@ The following will float an element over to the right side of its container:*/
 }
 
 /*since resorts is still in the regular flow and takes up the whole width it pushes tips down, if both are floated the height collapses. Must clear floats from collapsing element. 
-can remedy with overflow:auto;, not recomended and could create scrollbars on some screens. Most reliable is clearfix*/
+can remedy with overflow:auto;, not recomended and could create scrollbars on some screens. Most reliable is clearfix
 
+Floated element is still technically a block level element because it accepts any width, height, padding or margin values but behaves like an inline element.
+Margin won't create intended white space since element is outside of document flow and will only create space between side of it's container
+Must apply margins to the image
+
+
+If a block level element contains floats its height collapses
+*/
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/*This creates an blank pseudo-element after an element within the CSS, add class="clearfix" to any collapsed elements*/
 
 /*********************************************************
 //  lists
