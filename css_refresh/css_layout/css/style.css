@@ -96,7 +96,7 @@ a {
 @media (min-width: 789px) {
 
 	.wrap {
-		min-height: calc(25vh - 89px);
+		min-height: calc(100vh - 89px);
 	}
 
 	.container {
