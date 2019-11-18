@@ -1006,3 +1006,13 @@ make element block so it's all clickable
 *********************************************************/
 /* Add padding to increase clickable area*/
 
+/*********************************************************
+//  Absolute and Relative positioning
+*********************************************************/
+/*
+Absolute element positioning doesn't affect other elements in page flow, nor will it be affected by other elements in page.
+Like layers in Photoshop or Illustrator; free to place them anywhere on page.
+Positioned elements rely on you telling the browser where to place them, using values called positioning offsets, for the element's top, right, bottom or left position.
+With absolute positioning, you place the absolutely positioned elements in relation to the first PARENT with relative postioning; the PARENT CONTAINER is the positioning context.
+No parent with relative position makes the browser window the positioning context
+*/
