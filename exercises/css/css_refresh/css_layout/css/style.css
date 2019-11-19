@@ -1,35 +1,62 @@
 /* ================================= 
-  Base Styles
+  Base Element Styles
 ==================================== */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
-  line-height: 1.6;
-  color: #3a3a3a;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
 }
 
 p {
-  font-size: .95em;
-  margin-bottom: 1.5em;
+    font-size: .95em;
+    margin-bottom: 1.8em;
 }
 
 h2,
 h3,
 a {
-  color: #093a58;
+    color: #093a58;
 }
 
 h2,
-h3 {
-  margin-top: 0;
+h3,
+h4 {
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: .4em;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    line-height: 0;
+    position: relative;
+}
+
+figcaption {
+    font-size: .9em;
+    line-height: 1.5;
+    color: #fff;
+    padding: 1em;   
+    background: rgba(19,43,102, .85);
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* ================================= 
@@ -39,117 +66,150 @@ a {
 /* ---- Navigation ---- */
 
 .name {
-  font-size: 1.25em;
+    font-size: 1.25em;
+    margin: 0;
 }
 
-.name,
-.main-nav li {
-  list-style-type: none;
-  text-align: center;
-  background: #fff;
-  margin-top: 6px;
-  margin-bottom: 6px;
+.main-nav {
+    margin-top: 5px;
 }
 
-.name a,
-.main-nav a {
-  padding: 10px 15px;
-  text-align: center;
-  display: block;
-}
+    .name a,
+    .main-nav a {
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    
+    .main-nav a {
+        font-size: .95em;
+        color: #3acec2;
+        text-transform: uppercase;
+    }
 
-  .main-nav a {
-    font-size: .95em;
-    color: #3acec2;
-    text-transform: uppercase;
-  }
-  
-  .main-nav a:hover {
-    color: #093a58;
-  }
+    .main-nav a:hover {
+        color: #093a58;
+    }
 
 /* ---- Layout Containers ---- */
 
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
-.main-header {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  background: #3acec2;
-  margin-bottom: 30px;
+.banner,
+.main-footer {
+    text-align: center;
+}
+
+.banner {
+    color: #fff;
+    background: #3acec2;
+    padding: 3.2em 0;
+    margin-bottom: 60px;
+}
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .main-footer {
-  text-align: center;
-  padding: 2em 0;
-  background: #d9e4ea;
+    background: #d9e4ea;
+    padding: 2em 0;
+    margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+    width: 190px;
+}
+
+.headline {
+    margin-bottom: 0;
+}
+
+.icon-location {
+    width: 35px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    z-index: 2;
 }
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 789px) {
+@media (min-width: 769px) {
 
-  .wrap {
-    min-height: calc(100vh - 89px);
-  }
+    body {
+        padding-top: 68px;
+    }
 
-  .container {
-    width: 85%;
-    max-width: 1150px;
-    margin: 0 auto;
-  }
+    .main-header {
+        position: fixed;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0,0,0,.4);
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
 
-  .main-nav {
-    float: right;
-  }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-  .name,
-  .main-nav li {
-    width:;
-    float: left;
-  }
+    .name,
+    .col {
+        float: left;
+    }
 
-  .main-nav li {
-    margin-left: 12px;
-  }
+    .primary,
+    .secondary {
+        width: 50%;
+    }
 
-  /* ---- Columns ---- */
+    .main-nav {
+        float: right;
+    }
 
-  .col {
-    float: right;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
 
-  .primary {
-    width: 60%;
-  }
-  
-  .secondary {
-    width: 40%;
-  }
-  
-  /* ------------- */
+    .tagline {
+        font-size: 1.4em;
+    }
 
-  .feat-img {
-    width: 300px;
-    float: left;
-    margin-top: 5px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    padding: 10px;
-    border: solid 1px #d9e4ea;
-  }
+    /* ---- Float clearfix ---- */
 
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
 
 }
+
+@media (min-width: 1025px) {
+    
+    .container {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+    .primary {
+        width: 40%;
+    }
+
+    .secondary,
+    .tertiary {
+        width: 30%;
+    }
+
+}˛
