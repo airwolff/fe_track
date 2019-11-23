@@ -4,5 +4,7 @@
 
 .container {
 	display: flex;
-	height: 300px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 280px;
 }
