@@ -2,9 +2,47 @@
   Flexbox
 ==================================== */
 
-.container {
+.container1 {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
-	height: 280px;
+	justify-content: space-between;
+	flex-direction: row;
 }
+.container2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+}
+.container3 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	/*flex-direction: column;*/
+}
+.container4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	/*flex-direction: column;*/
+}
+.container5 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/*flex-direction: column;*/
+}
+.container6 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/*flex-direction: column;*/
+}
+
+/*.item-5 {
+	order: -1;
+}
+
+.item-1 {
+	order: -2;
+}*/

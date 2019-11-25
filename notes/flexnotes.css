@@ -1,0 +1,59 @@
+/* ================================= 
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 280px;
+}
+
+/* ================================= 
+  Flex Wrap
+==================================== */
+/*by default Flexbox lays out items in a line, which tries to keep all contents on that line even if they overflow the container
+
+FLEX-WRAP controls whether layout is single or multi line/column
+
+FLEX-WRAP property is for flex CONTAINERS only.
+
+NOWRAP - default value.
+The flex items are laid out in a single line which may cause the flex container to overflow. 
+
+WRAP
+The flex items break into multiple lines. 
+
+WRAP-REVERSE
+Same as wrap but reversed!
+
+*/
+
+/* ================================= 
+  Justify Content
+==================================== */
+
+/*
+
+FLEX-START - default
+The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-start side.
+This only applies to flex layout items. For items that are not children of a flex container, this value is treated like start.
+
+FLEX-END
+The items are packed flush to each other toward the edge of the alignment container depending on the flex container's main-end side.
+This only applies to flex layout items. For items that are not children of a flex container, this value is treated like end.
+
+CENTER
+The items are packed flush to each other toward the center of the alignment container with equal amounts of space at the front and end of the container
+
+SPACE-BETWEEN
+The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The first item is flush with the main-start edge, and the last item is flush with the main-end edge.
+
+SPACE-AROUND
+The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items is the same. The empty space before the first and after the last item equals half of the space between each pair of adjacent items.
+
+SPACE-EVENLY
+The items are evenly distributed within the alignment container along the main axis. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.
+
+STRETCH
+*/
