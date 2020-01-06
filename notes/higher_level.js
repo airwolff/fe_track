@@ -118,3 +118,18 @@ b = { a: 2, b: 2 }; // this will not work
 b.a = 2; // this will work since only a property of b is changed
 
 // While writing code in ES6, always use const to declare your variables. Use let only when you need to perform any changes (reassignments) to the variable and completely avoid using var.
+
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+//  DOM
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
+const myHeading = document.getElementById('myHeading');
+// selection for identifying element
+// document = global variable representing current webpage
+// .getElementById('myHeading'); belongs to document object
+
+myHeading.addEventListener('click', () => {
+  myHeading.style.color = 'red';
+});
