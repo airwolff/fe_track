@@ -1,13 +1,18 @@
-// const myHeading = document.getElementById('myHeading');
-// const myButton = document.getElementById('myButton');
-const myTextInput = document.getElementById('myTextInput');
-// const myHeading = document.getElementsByTagName('h1')[0];
+const myList = document.getElementsByTagName('li');
+ 
+for (let i = 0; i < myList.length; i +=1) {
+	myList[i].style.color = 'green';
+}
 
-// myButton.addEventListener('click', () => {
-//   myHeading.style.color = myTextInput.value;
-// });
-const myList = document.getElementsByTagName('li')[0];
+const error = document.getElementsByClassName('error');
+ 
+for (let i = 0; i < error.length; i +=1) {
+	error[i].style.color = 'red';
+}
 
-myList.addEventListener('click', () => {
-	myList.style.color = myTextInput.value;
-});
+const evens = document.querySelectorAll('li:nth-child(even)');
+ 
+for (let i = 0; i < evens.length; i +=1) {
+	evens[i].style.backgroundColor = 'lightgray';
+}
+

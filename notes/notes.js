@@ -134,9 +134,26 @@ myHeading.addEventListener('click', () => {
   myHeading.style.color = 'red';
 });
 
+
 const myParagraph = document.getElementsByTagName('p');
+// works similar to ById but returns an array which can iterate over with for loop or target by index.
+for (let i = 0; i < myList.length; i +=1) {
+  myList[i].style.color = "green";
+}
 
 
+const myError = document.getElementsByClassName('error');
+
+document.querySelectorAll('li');
+// returns all
+
+document.querySelector('li');
+// returns first
+
+document.querySelector('#myHeading');
+// can select id or class by using CSS selector i.e. # for id or . for class
+
+document.querySelectorAll('title=title');
 
 
 //////////////////////////////////////////////////////////
