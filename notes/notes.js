@@ -178,3 +178,24 @@ para1.innerHTML; // "This is a <i>simple</i> HTML file."
 para1.textContent = 'Modified HTML file'; // look for change in browser
 para1.innerHTML = '<i>Modified</i> HTML file'; // look for change in browser
 
+//////////////////////////////////////////////////////////
+//  Manipulating DOM
+//////////////////////////////////////////////////////////
+
+const input = document.querySelector('input');
+const p = document.querySelector('p.description'); // p.description p=element .description = class
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  p.innerHTML = input.value + ':';
+});
+
+
+
+
+
+
+
+
+
+
