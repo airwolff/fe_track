@@ -5,5 +5,3 @@ const button = document.querySelector('button');
 button.addEventListener('click', () => {
   p.innerHTML = input.value + ':';
 });
-
-p.title = "List Description"

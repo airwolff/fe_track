@@ -190,8 +190,10 @@ button.addEventListener('click', () => {
   p.innerHTML = input.value + ':';
 });
 
+// to get class name must use className .class WON'T WORK
 
-
+const inputValue = document.querySelector('#linkName').value; //gets value of id linkName;
+document.querySelector('#link').textContent = inputValue; // assigns value of linkName to id link
 
 
 
